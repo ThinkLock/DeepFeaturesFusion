@@ -1,0 +1,229 @@
+SVM C=0.01 mean for conv5b
+=========data size==========
+num of the features : 25088
+train data size 9537
+train label size 9537
+test data size 3783
+test label size 3783
+start at train 2017-08-13 15:21:48
+=========training===========
+start at test 2017-08-13 15:42:31
+=========testing============
+0.800422944753
+
+C =0.01 max for conv5b
+=========data size==========
+num of the features : 25088
+train data size 9537
+train label size 9537
+test data size 3783
+test label size 3783
+start at train 2017-08-13 21:10:25
+=========training===========
+start at test 2017-08-13 21:31:05
+=========testing============
+0.833729844039
+end of all opt 2017-08-13 21:41:50
+
+c=100 vcmpf for conv5b
+start at test 2017-08-18 18:22:58
+=========testing============
+0.81919111816
+why
+end of all opt 2017-08-18 21:47:51
+
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+c=100
+=========data size==========
+num of the features : 25088
+train data size 9537
+train label size 9537
+test data size 3783
+test label size 3783
+start at train 2017-08-13 17:32:28
+=========training===========
+start at test 2017-08-13 17:51:41
+=========testing============
+0.800422944753
+end of all opt 2017-08-13 18:01:11
+
+mean for all feature;
+=========data size==========
+num of the features : 25088
+train data size 9537
+train label size 9537
+test data size 3783
+test label size 3783
+start at train 2017-08-13 19:32:15
+=========training===========
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features=50, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=10, min_weight_fraction_leaf=0.0,
+            n_estimators=3000, n_jobs=-1, oob_score=True, random_state=1,
+            verbose=0, warm_start=False)
+start at test 2017-08-13 19:42:34
+=========testing============
+0.78376949511
+end of all opt 2017-08-13 19:43:05
+
+max for all feature;
+=========data size==========
+num of the features : 25088
+train data size 9537
+train label size 9537
+test data size 3783
+test label size 3783
+start at train 2017-08-13 20:33:51
+=========training===========
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features=50, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=10, min_weight_fraction_leaf=0.0,
+            n_estimators=3000, n_jobs=-1, oob_score=True, random_state=1,
+            verbose=0, warm_start=False)
+start at test 2017-08-13 20:45:14
+=========testing============
+0.795136135342
+end of all opt 2017-08-13 20:45:58
+
+
+
+////////////////////////////////////////
+conv fc cat conv5b is max fc is mean
+=========data size==========
+num of the features : 29184
+train data size 9537
+train label size 9537
+test data size 3783
+test label size 3783
+start at train 2017-08-19 15:21:23
+=========training===========
+start at test 2017-08-19 15:39:23
+=========testing============
+0.84403912239
+end of all opt 2017-08-19 15:51:16
+
+conv fc cat conv5b is max fc is max
+=========data size==========
+num of the features : 29184
+train data size 9537
+train label size 9537
+test data size 3783
+test label size 3783
+start at train 2017-08-19 16:30:18
+=========training===========
+start at test 2017-08-19 16:47:34
+=========testing============
+0.852233676976
+end of all opt 2017-08-19 16:58:41
+
+svm fusion for  fc6 and conv5b max
+0.861749933915
+
+////////////////////////////////////////
+svm fusion for fc6 0.7 and conv5b 0.3
+3307
+3783
+0.87417393603
+
+fc6 0.9 conv5b 0.1
+3276
+3783
+0.865979381443
+fc6 0.8 conv5b 0.2
+3290
+3783
+0.869680148031
+
+fc 0.4 conv5b 0.4
+3302
+3783
+0.872852233677
+
+fc 0.5 conv5b 0.5
+3307
+3783
+0.87417393603
+
+fc 0.4 conv5b 0.6
+3282
+3783
+0.867565424266
+
+fc 0.3 conv5b 0.7
+3238
+3783
+0.855934443563
+
+fc 0.2 conv5b 0.8
+3197
+3783
+0.845096484272
+
+conv5b 0.9
+3161
+3783
+0.835580227333
+
+
+
+//////////////////////////////////////
+//////////////32 finetune 16//////////
+max
+=========data size==========
+num of the features : 25088
+train data size 9537
+train label size 9537
+test data size 3783
+test label size 3783
+start at train 2017-08-25 18:03:30
+=========training===========
+start at test 2017-08-25 18:25:07
+=========testing============
+0.809939201692
+end of all opt 2017-08-25 18:35:46
+
+
+svm fusion
+lambad 0
+fc 32 on 16
+0.793285752049
+
+lambda 0.1
+3011
+3783
+0.795929156754
+
+lambda 0.2
+3024
+3783
+0.799365582871
+
+lambda 0.3
+3026
+3783
+0.799894263812
+
+lambda 0.4
+3029
+3783
+0.800687285223
+
+lambda 0.5
+3035
+3783
+0.802273328047
+
+lambda 0.6
+3035
+3783
+0.802273328047
+
+lambda 0.7
+
+
+
